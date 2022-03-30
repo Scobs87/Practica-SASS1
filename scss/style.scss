@@ -32,3 +32,13 @@ main {
     border-color: white;
   }
 }
+
+@mixin tituloMoteros($subrayado) {
+  @media screen and (max-width: 768px) {
+    text-decoration: $subrayado;
+  }
+}
+
+h1 {
+  @include tituloMoteros(line-through);
+}
